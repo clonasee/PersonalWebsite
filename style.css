@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Layout */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #222;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* keeps footer at bottom */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Header & Navigation */
+.website-header {
+  background-color: #bfc9d1;
+  color: #222;
+  padding: 1.5rem 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.website-title {
+  font-size: 2rem;
+}
+
+/* Navigation */
+.website-nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.website-nav li {
+  margin: 0 1rem;
+}
+
+.website-nav a {
+  color: #222;
+  text-decoration: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.website-nav a:hover {
+  background-color: #ffffff;
+}
+
+/* Main Content Container */
+.content {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  flex: 1; /* allows page to grow */
+}
+
+/* Home Page Intro Section */
+.intro {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Top Row (profile + intro text) */
+.intro-top {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* Bottom Row (paragraph + seal image) */
+.intro-bottom {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+/* Profile Image */
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Main intro text */
+.aboutme-text,
+.aboutme-bottom {
+  flex: 1;
+  max-width: 500px;
+}
+
+.aboutme-text h2 {
+  margin-bottom: 0.5rem;
+}
+
+.aboutme-text h3 {
+  margin-bottom: 0.8rem;
+}
+
+/* Secondary Image (Zuni seal) */
+.secondary-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Projects Page */
+.projects h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.project-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch; /* makes cards equal height */
+}
+
+.project-card {
+  background: #e0e0e0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 300px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+/* Hobbies Page */
+.hobbies h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.hobbies-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hobbies-card {
+  background: #e0e0e0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hobbies-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+/* Contact Page */
+.contact {
+  max-width: 600px;
+  margin: 3rem auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 1rem;
+}
+
+.contact-info {
+  margin-top: 1.5rem;
+  line-height: 2;
+}
+
+/* Footer */
+.website-footer {
+  background-color: #bfc9d1;
+  color: #222;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+/* Dark Mode */
+.theme-button {
+  margin-left: 1rem;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #1f2937;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.theme-button:hover {
+  opacity: 0.9;
+}
+
+body.dark {
+  background-color: #111827;
+  color: #f3f4f6;
+}
+
+body.dark .website-header {
+  background-color: #1f2937;
+  color: #f3f4f6;
+}
+
+body.dark .website-nav a {
+  color: #f3f4f6;
+}
+
+body.dark .project-card,
+body.dark .hobbies-card,
+body.dark .contact {
+  background-color: #1f2937;
+  color: #f3f4f6;
+}
+
+body.dark .website-footer {
+  background-color: #1f2937;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+  .website-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .website-nav ul {
+    flex-direction: column;
+  }
+
+  .website-nav li {
+    margin: 0.5rem 0;
+  }
+
+  .intro-top,
+  .intro-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .secondary-image {
+    width: 180px;
+    height: 180px;
+  }
+
+  .project-container,
+  .hobbies-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,110 @@
+<!-- this is the landing page, the home of all -->
+<!-- this holds 'about me' -->
+<!doctype html>
+
+<!-- sets language to english -->
+<html lang="en">
+  <!-- containter for metadata -->
+  <head>
+    <!-- character encoding -->
+    <meta charset="UTF-8" />
+
+    <!-- responsive web design -->
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+
+    <!-- link to main stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- tab title -->
+    <title>Projects | Caitlyn's Personal Website</title>
+  </head>
+
+  <!-- contains visible content of webpage -->
+  <body>
+    <!-- identifies page -->
+    <header class="website-header">
+      <!-- Website title -->
+      <h1 class="website-title">Projects</h1>
+
+      <!-- navigation menu -->
+      <nav class="website-nav">
+        <!-- unordered list -->
+        <ul>
+          <!-- the following are links to other pages through -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="hobbies.html">Hobbies</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- dark mode for extra credit -->
+      <button id="theme-toggle" class="theme-button">Switch Theme</button>
+    </header>
+
+    <main class="content">
+      <section class="projects">
+        <h2>My Projects</h2>
+        <div class="project-container">
+          <!-- Constellate Project -->
+          <div class="project-card">
+            <img src="constellateWelcome.png" alt="constellate project"/>
+            <h3>Constellate</h3>
+            <p>
+              A JavaFX task management application featuring a constellation
+              themed interface with SQLite database integration. Designed with a
+              focus on user experience, data storage, and modular software
+              structure.
+            </p>
+          </div>
+
+          <!-- ForcePath Project -->
+          <div class="project-card">
+            <img src="forcePathChoose.png" alt="force path app"/>
+            <h3>ForcePath</h3>
+            <p>
+              Interactive Star Wars inspired application built with HTML, CSS,
+              and JavaScript. Users navigate character paths while exploring
+              dynamic styling, theme design, and responsive layout techniques.
+            </p>
+          </div>
+
+          <!-- Circuit Project -->
+          <div class="project-card">
+            <img src="gradCapProject.jpg" alt="picture of grad cap"/>
+            <h3>Arduino Grad Cap</h3>
+            <p>A custom Arduino based LED lighting system integrated into my high school graduation cap. Programmed with C++ to create dynamic lighting patterns. Project involved circuit design, wiring, power management, and debugging for stable performance.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="website-footer">
+      <p>© 2026 Caitlyn Lonasee</p>
+    </footer>
+
+    <script>
+  const toggleButton = document.getElementById("theme-toggle");
+
+  // Check saved theme on page load
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+    toggleButton.textContent = "Light Mode";
+  }
+
+  toggleButton.onclick = function () {
+    document.body.classList.toggle("dark");
+
+    if (document.body.classList.contains("dark")) {
+      localStorage.setItem("theme", "dark");
+      this.textContent = "Light Mode";
+    } else {
+      localStorage.setItem("theme", "light");
+      this.textContent = "Dark Mode";
+    }
+  };
+</script>
+
+
+  </body>
+</html>

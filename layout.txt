@@ -1,0 +1,10 @@
+Steps for Personal Website Assignment
+    1. Create all HTML skeleton files
+    2. Add Header/Nav/Footer on all pages
+    3. Link navigation between pages
+    4. Add context (text and media)
+    5. Style Desktop version
+    6. Add media query for mobile version
+    7. Test in Chrome
+    8. Add to Github pages
+    9. Extra Credit: Implement Dark/Light mode toggle
