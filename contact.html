@@ -1,94 +1,70 @@
-<!-- this is the landing page, the home of all -->
-<!-- this holds 'about me' -->
 <!doctype html>
 
 <!-- sets language to english -->
 <html lang="en">
-  <!-- containter for metadata -->
   <head>
-    <!-- character encoding -->
     <meta charset="UTF-8" />
-
-    <!-- responsive web design -->
-    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
-
-    <!-- link to main stylesheet -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Caitlyn Lonasee - Computer Science student at New Mexico State University (Computer Networking, minor in Electrical Engineering)."
+    />
     <link rel="stylesheet" href="style.css" />
-
-    <!-- tab title -->
-    <title>Contact | Caitlyn's Personal Website</title>
+    <title>Contact | Caitlyn Lonasee</title>
   </head>
 
-  <!-- contains visible content of webpage -->
   <body>
-    <!-- identifies page -->
     <header class="website-header">
-      <!-- Website title -->
       <h1 class="website-title">Contact</h1>
 
-      <!-- navigation menu -->
       <nav class="website-nav">
-        <!-- unordered list -->
         <ul>
-          <!-- the following are links to other pages through -->
           <li><a href="index.html">Home</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="hobbies.html">Hobbies</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
       </nav>
-      <!-- dark mode for extra credit -->
-      <button id="theme-toggle" class="theme-button">Switch Theme</button>
+      <!-- dark mode toggle -->
+      <button id="theme-toggle" class="theme-button">Dark Mode</button>
     </header>
 
     <main class="content">
       <section class="contact">
         <h2>Get In Touch</h2>
         <p>
-          If you would like to connect, collaborate, or learn more about my
-          work, feel free to reach out through the platforms below.
+          I'm always happy to connect about internships, full-time roles,
+          research, or collaboration. Feel free to reach out through any of the
+          options below.
         </p>
         <div class="contact-info">
           <p>
             <strong>Email: </strong
+            ><a href="mailto:clonasee30@gmail.com">clonasee30@gmail.com</a>
+          </p>
+          <p>
+            <strong>School Email: </strong
             ><a href="mailto:clonasee@nmsu.edu">clonasee@nmsu.edu</a>
           </p>
           <p>
             <strong>GitHub: </strong
-            ><a href="https://github.com/clonasee">github.com/clonasee</a>
+            ><a
+              href="https://github.com/clonasee"
+              target="_blank"
+              rel="noopener"
+              >github.com/clonasee</a
+            >
           </p>
+          <p><strong>Location: </strong>Las Cruces, NM</p>
           <p><strong>Discord: </strong>cl0nas3e</p>
         </div>
       </section>
     </main>
 
-    <!-- footer -->
     <footer class="website-footer">
-      <p>© 2026 Caitlyn Lonasee</p>
+      <p>&copy; 2026 Caitlyn Lonasee</p>
     </footer>
 
-    <script>
-  const toggleButton = document.getElementById("theme-toggle");
-
-  // Check saved theme on page load
-  if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.add("dark");
-    toggleButton.textContent = "Light Mode";
-  }
-
-  toggleButton.onclick = function () {
-    document.body.classList.toggle("dark");
-
-    if (document.body.classList.contains("dark")) {
-      localStorage.setItem("theme", "dark");
-      this.textContent = "Light Mode";
-    } else {
-      localStorage.setItem("theme", "light");
-      this.textContent = "Dark Mode";
-    }
-  };
-</script>
-
-
+    <script src="script.js"></script>
   </body>
 </html>

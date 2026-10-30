@@ -1,110 +1,214 @@
-<!-- this is the landing page, the home of all -->
-<!-- this holds 'about me' -->
 <!doctype html>
 
 <!-- sets language to english -->
 <html lang="en">
-  <!-- containter for metadata -->
   <head>
-    <!-- character encoding -->
     <meta charset="UTF-8" />
-
-    <!-- responsive web design -->
-    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
-
-    <!-- link to main stylesheet -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Caitlyn Lonasee - Computer Science student at New Mexico State University (Computer Networking, minor in Electrical Engineering)."
+    />
     <link rel="stylesheet" href="style.css" />
-
-    <!-- tab title -->
-    <title>Projects | Caitlyn's Personal Website</title>
+    <title>Projects | Caitlyn Lonasee</title>
   </head>
 
-  <!-- contains visible content of webpage -->
   <body>
-    <!-- identifies page -->
     <header class="website-header">
-      <!-- Website title -->
       <h1 class="website-title">Projects</h1>
 
-      <!-- navigation menu -->
       <nav class="website-nav">
-        <!-- unordered list -->
         <ul>
-          <!-- the following are links to other pages through -->
           <li><a href="index.html">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="hobbies.html">Hobbies</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="experience.html">Experience</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <!-- dark mode for extra credit -->
-      <button id="theme-toggle" class="theme-button">Switch Theme</button>
+      <!-- dark mode toggle -->
+      <button id="theme-toggle" class="theme-button">Dark Mode</button>
     </header>
 
     <main class="content">
       <section class="projects">
         <h2>My Projects</h2>
         <div class="project-container">
-          <!-- Constellate Project -->
           <div class="project-card">
-            <img src="constellateWelcome.png" alt="constellate project"/>
-            <h3>Constellate</h3>
-            <p>
-              A JavaFX task management application featuring a constellation
-              themed interface with SQLite database integration. Designed with a
-              focus on user experience, data storage, and modular software
-              structure.
+            <div class="project-banner"><span>CatNet</span></div>
+            <h3>CatNet</h3>
+            <p class="project-meta">
+              Cybersecurity &amp; Networking Strategy Game, Hackathon &middot;
+              Summer 2026
             </p>
+            <p>
+              A browser-based strategy game that teaches real networking and
+              cybersecurity concepts like DNS, firewalls, malware, and DDoS
+              through incident-response gameplay. Features live SVG network
+              visualization, a 5-tier progression system with 10 security
+              incidents, and a persistent save system. Deployed as an
+              installable Progressive Web App.
+            </p>
+            <ul class="tags">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>Vite</li>
+              <li>SVG</li>
+              <li>PWA</li>
+            </ul>
+            <a
+              class="project-link"
+              href="https://github.com/clonasee/CatNet"
+              target="_blank"
+              rel="noopener"
+              >View on GitHub</a
+            >
           </div>
-
-          <!-- ForcePath Project -->
           <div class="project-card">
-            <img src="forcePathChoose.png" alt="force path app"/>
+            <div class="project-banner"><span>H.O.R.S.E.</span></div>
+            <h3>H.O.R.S.E.</h3>
+            <p class="project-meta">
+              Arcade Basketball Game &middot; Spring 2026
+            </p>
+            <p>
+              A 2-player arcade take on H.O.R.S.E. with mouse-driven aim and
+              power mechanics. I later extended it into real-time online
+              multiplayer supporting multiple simultaneous game rooms.
+            </p>
+            <ul class="tags">
+              <li>JavaScript</li>
+              <li>HTML5 Canvas</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>Socket.io</li>
+            </ul>
+          </div>
+          <div class="project-card">
+            <div class="project-banner"><span>Holocron</span></div>
+            <h3>Holocron</h3>
+            <p class="project-meta">
+              Star Wars Character Database &middot; Spring 2026
+            </p>
+            <p>
+              A full-stack CRUD web app for creating, viewing, and querying Star
+              Wars characters. Uses linked Character and Planet collections, a
+              REST API with filterable queries, and is containerized for
+              deployment.
+            </p>
+            <ul class="tags">
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>MongoDB</li>
+              <li>Mongoose</li>
+              <li>Docker</li>
+            </ul>
+          </div>
+          <div class="project-card">
+            <img src="forcePathChoose.png" alt="ForcePath app screen" />
             <h3>ForcePath</h3>
-            <p>
-              Interactive Star Wars inspired application built with HTML, CSS,
-              and JavaScript. Users navigate character paths while exploring
-              dynamic styling, theme design, and responsive layout techniques.
+            <p class="project-meta">
+              Choose-Your-Path Character Builder &middot; Spring 2026
             </p>
+            <p>
+              An interactive Star Wars inspired app where users choose their
+              path, lightsaber, and ship. Choices persist with localStorage and
+              screens change with animated transitions.
+            </p>
+            <ul class="tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
           </div>
-
-          <!-- Circuit Project -->
           <div class="project-card">
-            <img src="gradCapProject.jpg" alt="picture of grad cap"/>
+            <div class="project-banner">
+              <span>Zuni Cultural Story Map</span>
+            </div>
+            <h3>Zuni Cultural Story Map</h3>
+            <p class="project-meta">
+              Language Learning Tool, NMSU Hackathon &middot; 2026
+            </p>
+            <p>
+              A map-based cultural storytelling web app with an interactive map
+              of culturally significant locations and a categorized Zuni
+              vocabulary tool (greetings, numbers, food, months) for language
+              learning.
+            </p>
+            <ul class="tags">
+              <li>JavaScript</li>
+              <li>Leaflet</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+          <div class="project-card">
+            <img
+              src="constellateWelcome.png"
+              alt="Constellate welcome screen"
+            />
+            <h3>Constellate</h3>
+            <p class="project-meta">Team Project &middot; Fall 2025</p>
+            <p>
+              A JavaFX desktop app that gamifies task management by building
+              constellations as users complete tasks, backed by SQLite. I built
+              the frontend scenes and UI: the task list, constellation view,
+              settings, and progress tracking.
+            </p>
+            <ul class="tags">
+              <li>Java</li>
+              <li>JavaFX</li>
+              <li>SQLite</li>
+              <li>Git</li>
+            </ul>
+          </div>
+          <div class="project-card">
+            <div class="project-banner">
+              <span>Op-Amp Amplifier Design</span>
+            </div>
+            <h3>Op-Amp Amplifier Design</h3>
+            <p class="project-meta">Simulation and Hardware &middot; 2025</p>
+            <p>
+              Designed inverting and non-inverting amplifiers with a uA741,
+              validated gain in simulation, then built the circuits and compared
+              oscilloscope measurements against expected results.
+            </p>
+            <ul class="tags">
+              <li>TopSpice</li>
+              <li>Multisim</li>
+              <li>Oscilloscope</li>
+            </ul>
+          </div>
+          <div class="project-card">
+            <img
+              src="gradCapProject.jpg"
+              alt="Graduation cap with LED lights"
+            />
             <h3>Arduino Grad Cap</h3>
-            <p>A custom Arduino based LED lighting system integrated into my high school graduation cap. Programmed with C++ to create dynamic lighting patterns. Project involved circuit design, wiring, power management, and debugging for stable performance.</p>
+            <p class="project-meta">Programmable LED System &middot; 2022</p>
+            <p>
+              A custom Arduino LED system built into my high school graduation
+              cap, with 16 unique lighting patterns. Involved circuit design,
+              wiring, power management, and debugging for stable performance.
+            </p>
+            <ul class="tags">
+              <li>Arduino</li>
+              <li>C++</li>
+              <li>Circuit Design</li>
+            </ul>
           </div>
         </div>
+        <p class="more-link">
+          More of my work is on
+          <a href="https://github.com/clonasee" target="_blank" rel="noopener"
+            >GitHub</a
+          >.
+        </p>
       </section>
     </main>
 
-    <!-- footer -->
     <footer class="website-footer">
-      <p>© 2026 Caitlyn Lonasee</p>
+      <p>&copy; 2026 Caitlyn Lonasee</p>
     </footer>
 
-    <script>
-  const toggleButton = document.getElementById("theme-toggle");
-
-  // Check saved theme on page load
-  if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.add("dark");
-    toggleButton.textContent = "Light Mode";
-  }
-
-  toggleButton.onclick = function () {
-    document.body.classList.toggle("dark");
-
-    if (document.body.classList.contains("dark")) {
-      localStorage.setItem("theme", "dark");
-      this.textContent = "Light Mode";
-    } else {
-      localStorage.setItem("theme", "light");
-      this.textContent = "Dark Mode";
-    }
-  };
-</script>
-
-
+    <script src="script.js"></script>
   </body>
 </html>

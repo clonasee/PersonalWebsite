@@ -1,66 +1,69 @@
-<!-- this is the landing page, the home of all -->
-<!-- this holds 'about me' -->
 <!doctype html>
 
 <!-- sets language to english -->
 <html lang="en">
-  <!-- containter for metadata -->
   <head>
-    <!-- character encoding -->
     <meta charset="UTF-8" />
-
-    <!-- responsive web design -->
-    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
-    <meta name="description" content="Caitlyn Lonasee - Computer Science Student at New Mexico State University (Computer Networking, Minor: Electrical Engineering)"/>
-
-    <!-- link to main stylesheet -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Caitlyn Lonasee - Computer Science student at New Mexico State University (Computer Networking, minor in Electrical Engineering)."
+    />
     <link rel="stylesheet" href="style.css" />
-
-    <!-- tab title -->
     <title>Caitlyn Lonasee | Personal Website</title>
   </head>
 
-  <!-- contains visible content of webpage -->
   <body>
-    <!-- identifies page -->
     <header class="website-header">
-      <!-- Website title -->
       <h1 class="website-title">Welcome!</h1>
 
-      <!-- navigation menu -->
       <nav class="website-nav">
-        <!-- unordered list -->
         <ul>
-          <!-- the following are links to other pages through -->
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="experience.html">Experience</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <!-- dark mode -->
-      <button id="theme-toggle" class="theme-button">Switch Theme</button>
+      <!-- dark mode toggle -->
+      <button id="theme-toggle" class="theme-button">Dark Mode</button>
     </header>
 
-    <!-- main content area -->
     <main class="content">
-      <!-- about section -->
       <section class="intro">
-        <!-- image of self-->
-         <div class="intro-top">
-        <img src="profilePic.jpg" alt="Photo of Me" class="profile-image" />
+        <div class="intro-top">
+          <img
+            src="websiteProfilePic.jpg"
+            alt="Photo of Caitlyn Lonasee"
+            class="profile-image"
+          />
 
-        <!-- about me bio -->
-        <div class="aboutme-text">
-          <h2>Keshhi, Ho' Caitlyn Le'shina!</h2>
-          <h3>Hello, I'm Caitlyn!</h3>
-          <p>
-            I am a Computer Science student at New Mexico State University with a concentration in Computer Networking and a minor in Electrical Engineering, looking to graduate in May 2027.
-          </p>
-        <div class="button-row">
+          <div class="aboutme-text">
+            <h2>Keshhi, Ho' Caitlyn Le'shina!</h2>
+            <h3>Hello, I'm Caitlyn!</h3>
+            <p>
+              I am a Computer Science student at New Mexico State University
+              with a concentration in Computer Networking and a minor in
+              Electrical Engineering, graduating in May 2027.
+            </p>
+            <p>
+              This past summer I was a Software Developer Intern at NASA White
+              Sands Test Facility through Sierra Lobo. I enjoy building
+              full-stack web apps, real-time multiplayer games, and tools that
+              teach networking and cybersecurity.
+            </p>
+            <div class="button-row">
               <a class="link-button" href="projects.html">View Projects</a>
-              <a class="link-button outline" href="experience.html">Experience</a>
-              <a class="link-button outline" href="Caitlyn_Lonasee_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+              <a class="link-button outline" href="experience.html"
+                >Experience</a
+              >
+              <a
+                class="link-button outline"
+                href="Caitlyn_Lonasee_Resume.pdf"
+                target="_blank"
+                rel="noopener"
+                >Resume (PDF)</a
+              >
             </div>
           </div>
         </div>
@@ -68,7 +71,10 @@
         <div class="highlights">
           <div class="highlight">
             <span class="highlight-label">Internship</span>
-            <p>Software Developer Intern, NASA White Sands Test Facility (Sierra Lobo), Summer 2026</p>
+            <p>
+              Software Developer Intern, NASA White Sands Test Facility (Sierra
+              Lobo), Summer 2026
+            </p>
           </div>
           <div class="highlight">
             <span class="highlight-label">Leadership</span>
@@ -87,7 +93,11 @@
               frog (dakkya:kwe) and an eagle (k'yak'yali:kwe).
             </p>
           </div>
-          <img src="tribalSeal.png" alt="Pueblo of Zuni tribal seal" class="secondary-image" />
+          <img
+            src="tribalSeal.png"
+            alt="Pueblo of Zuni tribal seal"
+            class="secondary-image"
+          />
         </div>
       </section>
     </main>
